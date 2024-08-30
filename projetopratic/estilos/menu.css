@@ -1,0 +1,151 @@
+body{
+    background-color: black;
+    color: white;
+    margin-bottom: 100vh;
+}
+/* Removendo as marcas (bullets) e a indentação das listas e definindo a largura para os itens do menu*/
+nav ul {
+    display: flex;
+    width: 70%;
+    background-color: black;
+    border-bottom: #ffffff;
+    gap: 50px;
+}
+
+/*Posicionando os itens da lista e definindo o posicionamento com o valor relative, para depois posicionar os sub-menus na posição absoluta em relação a eles.*/
+nav ul li {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/*Posicionamento do itens do submenu ao lado direito*/
+#none{
+    position: absolute;
+    display: none;
+    margin-top: 100px;
+}
+
+/*Melhorando a aparencia do submenu. Entretanto, ele ainda não irá aparecer*/
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    background: black;
+    padding: 10px;
+    border-radius: 10px;
+ }
+
+ /*Exibindo o submenu*/
+
+/*Estilizando o evento hover*/
+nav ul li a:hover{
+    background-color:darkgrey;
+    padding: 12px;
+
+}
+
+/*barra*/
+
+/* Reset básico de estilos */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para o cabeçalho e container de pesquisa */
+header {
+    margin-top: 50px;
+    background-color: #000000;
+        border-bottom: 1px solid #000000;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+
+.search-container {
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    outline: none;
+}
+
+.search-input:focus {
+    border-color: #007bff;
+}
+
+.search-button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+.search-button:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.search-button:active {
+    background-color: white;
+}
+
+/*layout*/
+
+
+.styleheader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: space-evenly
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-between;
+    
+
+}
+
+.imgjh{
+    width: 300px;
+    height: 300px;
+    border:#fff;
+    padding: 50px;
+}
